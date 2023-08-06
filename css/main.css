@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: darkcyan;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Sitcky footer */
+
+.site-main {
+  flex-grow: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 80px auto 0;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: ghostwhite;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;   
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  margin: 0 auto 20px;
+}
+
+.form__search {
+  display: flex;
+  column-gap: 15px;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.input__search {
+  flex-grow: 1;
+}
+
+.btn__filter {
+  width: 120px;
+}
+
+input,
+button {
+  flex-grow: 1;
+  padding: 8px 10px;
+  color: #fff;
+  border: 2px solid royalblue;
+  border-radius: 6px;
+  background-color: mediumpurple;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #fff;  
+}
+
+.input__time {
+  width: 80px;
+  padding-right: 0;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.item {
+  padding-left: 18px;
+  font-size: 18px;
+}
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.time {
+  display: inline-block;
+  background-color: mediumpurple;
+  margin-right: 8px;
+  padding: 6px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+}
