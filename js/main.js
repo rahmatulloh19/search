@@ -1,3 +1,5 @@
+// brought elements from DOM
+
 const elForm = document.querySelector(".js-form");
 const elSearchForm = document.querySelector(".js-form__search");
 const elSearch = document.querySelector(".js-search");
@@ -5,6 +7,7 @@ const elTitle = document.querySelector(".js-title");
 const elTime = document.querySelector(".js-time");
 const elList = document.querySelector(".list");
 
+// declare default array
 const missions = [
   {
     title: "Ertalab uyg'onish",
@@ -32,6 +35,7 @@ const missions = [
   },
 ]
 
+// maked function rending
 function renderToDo(array) {
   elList.innerHTML = "";
   array.filter(function(data) {
@@ -51,6 +55,7 @@ function renderToDo(array) {
 
 renderToDo(missions);
 
+// for adding new target to mission
 elForm.addEventListener("submit", function(evt) {
   evt.preventDefault();
 
@@ -67,6 +72,7 @@ elForm.addEventListener("submit", function(evt) {
   renderToDo(missions);
 })
 
+// searcher in global array
 elSearchForm.addEventListener("submit", function(evt) {
   evt.preventDefault();
 
